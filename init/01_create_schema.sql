@@ -1,4 +1,6 @@
--- สร้างตาราง task ถ้ายังไม่มี
+-- log for debug
+DO $$ BEGIN RAISE NOTICE 'Creating schema...'; END $$;
+
 CREATE TABLE IF NOT EXISTS public.task (
     id SERIAL PRIMARY KEY,
     title VARCHAR NOT NULL,
