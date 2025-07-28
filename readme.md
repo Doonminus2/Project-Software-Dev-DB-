@@ -1,4 +1,3 @@
-
 <h1 align="center">
   <br>
   <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Zm15LImGZ4DcerJW3F-_-pvGyLCN-vQs9g&s" alt=" Project Siet Kitl" width=""></a>
@@ -17,23 +16,10 @@
          alt="fastapi">
   </a>
   <a href="https://sqlmodel.tiangolo.com/"><img src="https://badge.fury.io/py/sqlmodel.svg"></a>
-  
-  
-
-
 
 > GitHub [@Doonminus2](https://github.com/Doonminus2) &nbsp;&middot;&nbsp;
 
-
-
-
-
-
-
-
-
-
-# Tech Stack  FastAPI App (Python + PostgreSQL + Docker)
+# Tech Stack FastAPI App (Python + PostgreSQL + Docker)
 
 โปรเจกต์นี้เป็น API สำหรับจัดการ TODO List โดยใช้ Python, FastAPI, SQLModel และ PostgreSQL ผ่าน Docker
 
@@ -43,9 +29,10 @@
 ---
 
 ## 🧰 เครื่องมือที่ใช้
-- 🐍 Python 3.12 นะไม่เอา 3.13.5 
+
+- 🐍 Python 3.12 นะไม่เอา 3.13.5
 - ⚡ FastAPI (สร้าง API)
-- 🐘 PostgreSQL (DB) 
+- 🐘 PostgreSQL (DB)
 - 🐳 Docker (ตัวช่วยลง DB ของเจคนี้ ตัวนี้โหลดแยก)
 
 - 🛠️ pgAdmin (DBMS ของ Postgre)
@@ -64,6 +51,7 @@ python -m venv venv
 แล้วเปิดใช้งาน:
 
 - 🪟 บน Windows:
+
   ```bash
   venv\Scripts\activate
   ```
@@ -99,7 +87,11 @@ pip install -r requirements.txt
 docker-compose up -d
 ```
 
-รอให้ container ขึ้น
+- 🍎 บน /Linux:
+
+  ```bash
+  docker compose up -d
+  ```
 
 ---
 
@@ -124,10 +116,10 @@ uvicorn app.main:app --reload
 เปิด:  
 📄 http://localhost:5050
 
-
 ---
 
 ## ✅ แนวทางต่อไป
+
 - เพิ่ม Auth: /register /login
 
 - สร้างระบบ filter / sort / update
