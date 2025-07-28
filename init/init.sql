@@ -21,13 +21,15 @@ SET row_security = off;
 --
 
 INSERT INTO public.task VALUES (1, 'เขียน README', 'ให้เสร็จวันนี้', false, '2025-07-28 01:37:35.74906');
+INSERT INTO public.task VALUES (2, 'ซื้อของ', 'วันนี้', false, '2025-07-28 01:56:54.308805');
+INSERT INTO public.task VALUES (3, 'string', 'string', false, '2025-07-28 06:17:16.092');
 
 
 --
 -- Name: task_id_seq; Type: SEQUENCE SET; Schema: public; Owner: todo
 --
 
-SELECT pg_catalog.setval('public.task_id_seq', 1, true);
+SELECT pg_catalog.setval('public.task_id_seq', 2, true);
 
 
 --
