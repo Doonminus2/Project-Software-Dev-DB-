@@ -118,6 +118,34 @@ uvicorn app.main:app --reload
 
 ---
 
+init.sql`ที่จะถูก preload ตอน`docker-compose up`
+
+> อย่าลืม `git add init/init.sql` แล้ว commit & push ทุกครั้งที่อัปเดตข้อมูล!
+
+### 🧪 ทดสอบว่าได้ผลจริงไหม
+
+1. ลอง `docker compose down -v`
+2. แล้ว `docker compose up -d`
+3. เปิด pgAdmin ดูที่ table `task` → จะมีข้อมูลล่าสุด
+
+---
+
+## 💡 แนะนำให้สร้างไฟล์ช่วย: `scripts/dump-db.sh`
+
+```bash
+#!/bin/bash
+docker exec -t todo_postgres pg_dump -U todo -d tododb --data-only --inserts > init/init.sql
+echo "✅ Updated init/init.sql from live DB"
+```
+
+จากนั้นให้เพื่อนพิมพ์แค่นี้:
+
+```bash
+bash scripts/dump-db.sh
+```
+
+สะดวกมาก ✨
+
 ## ✅ แนวทางต่อไป
 
 - เพิ่ม Auth: /register /login
