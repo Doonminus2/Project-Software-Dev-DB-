@@ -44,8 +44,16 @@
 
 ### 3️⃣ สร้าง virtual environment (ครั้งเดียว)
 
+- บน windows Mac:
+
 ```bash
 python -m venv venv
+```
+
+- บน Linux:
+
+```bash
+python3 -m venv venv~
 ```
 
 แล้วเปิดใช้งาน:
@@ -56,10 +64,15 @@ python -m venv venv
   venv\Scripts\activate
   ```
 
-- 🍎 บน Mac/Linux:
+- 🍎 บน Mac:
   ```bash
   source venv/bin/activate
   ```
+- บน Linux:
+
+```bash
+source venv~/bin/activate
+```
 
 ---
 
